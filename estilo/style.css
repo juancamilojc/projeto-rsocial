@@ -1,29 +1,33 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Rubik', sans-serif;
-    transition: 0.3s;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: flex-start;
+    margin: 0.5rem;
 }
 
 .user-box {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    padding: 2rem;
-    margin: 0.25rem 1rem;
-    box-shadow: 0.1rem 0.1rem 0.25rem rgb(14 14 14 / 25%);
+    padding: 2rem 1rem;
+    margin: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgb(14 14 14 / 25%);
 }
 
 #foto {
@@ -34,6 +38,7 @@ body {
 
 #nick {
     font-weight: bolder;
+    margin: 0.5rem 0;
 }
 
 .menu {
@@ -57,17 +62,24 @@ body {
     position: relative;
     transition: 0.5s;
     bottom: 0.1rem;
-    box-shadow: 0.1rem 0.1rem 0.25rem rgb(14 14 14 / 50%);
+    box-shadow: 0.1rem 0.2rem 0.5rem rgb(14 14 14 / 35%);
 }
 
 .celular {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-content: center;
-    margin: 0.25rem 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 1rem;
+    height: 95vh;
 }
 
-.celular > img {
+
+
+.celular iframe {
     height: 95vh;
-    filter: drop-shadow(0.1rem 0.1rem 0.25rem rgb(14 14 14 / 25%));
+    border: 0.25rem solid #141414;
+    border-radius: 1.5rem;
+    box-shadow: 0.15rem 0.15rem 0.5rem rgb(14 14 14 / 35%);
 }
