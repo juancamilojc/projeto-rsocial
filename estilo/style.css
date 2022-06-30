@@ -37,7 +37,7 @@
 }
 
 #nick {
-    font-weight: bolder;
+    font-weight: 800;
     margin: 0.5rem 0;
 }
 
@@ -56,13 +56,13 @@
     height: 2rem;
     border-radius: 1rem;
     margin: 0.25rem;
+    box-shadow: 0.1rem 0.1rem 0.25rem rgb(14 14 14 / 35%);
 }
 
 .menu img:hover {
-    position: relative;
-    transition: 0.5s;
-    bottom: 0.1rem;
-    box-shadow: 0.1rem 0.2rem 0.5rem rgb(14 14 14 / 35%);
+    transition: 0.3s;
+    transform: translate(-0.1rem, -0.1rem);
+    box-shadow: 0.15rem 0.25rem 0.5rem rgb(14 14 14 / 35%);
 }
 
 .celular {
@@ -75,11 +75,9 @@
     height: 95vh;
 }
 
-
-
 .celular iframe {
     height: 95vh;
     border: 0.25rem solid #141414;
     border-radius: 1.5rem;
-    box-shadow: 0.15rem 0.15rem 0.5rem rgb(14 14 14 / 35%);
+    box-shadow: 0.1rem 0.1rem 0.5rem rgb(14 14 14 / 45%);
 }
